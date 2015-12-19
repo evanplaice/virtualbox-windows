@@ -41,7 +41,7 @@ This project completely automates the process of creating a Windows virtual mach
 
   Creates a Windows virtualbox profile + vdisk image
 
-- vdi-attach.sh
+- vdi-attach.sh [vdi-path]
 
   Attaches a VirtualBox VDI (Virtual Disk Image) as if it were a physical disk using fairy dust and magic
 
