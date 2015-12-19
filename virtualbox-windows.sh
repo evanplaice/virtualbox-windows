@@ -9,7 +9,7 @@ VM='Windows-10'
 VM_DIR="${HOME}/VirtualBox VMs/$VM"
 
 # set the path to the install ISO
-ISO_PATH="${HOME}/Desktop/Win10_SingleLang_English_x64.iso"
+ISO_PATH="$1"
 
 # create the VM directory
 mkdir "$VM_DIR"

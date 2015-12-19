@@ -8,8 +8,12 @@ This project completely automates the process of creating a Windows virtual mach
 
 ### Usage
 
-1. Set ISO_PATH to the path of your Windows Insall ISO
-2. Run `./virtualbox-windows.sh`
+```bash
+./virtualbox-windows.sh [iso-path]
+```
+
+***[iso-path]*** - The path to the Windows install ISO
+
 
 *Note: The script will output to `~/VirtualBox VMs/Windows-10`*
 
@@ -35,13 +39,13 @@ This project completely automates the process of creating a Windows virtual mach
 
 *Note: This setup has been verified on an iMac (Late2009). The settings are currently hardcoded in `virtualbox-windows.sh` if you need/want to make changes.* 
 
-### Files
+### Scripts
 
-- virtualbox-windows.sh
+- `virtualbox-windows.sh`
 
   Creates a Windows virtualbox profile + vdisk image
 
-- vdi-attach.sh [vdi-path]
+- `vdi-attach.sh [vdi-path]`
 
   Attaches a VirtualBox VDI (Virtual Disk Image) as if it were a physical disk using fairy dust and magic
 
