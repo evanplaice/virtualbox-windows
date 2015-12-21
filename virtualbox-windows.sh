@@ -2,6 +2,11 @@
 
 # instructions adapted from http://www.perkin.org.uk/posts/create-virtualbox-vm-from-the-command-line.html
 
+if [ $# -eq 0 ]; then
+    echo 'Error: Missing the [iso-path] argument'
+    exit 1
+fi
+
 # set the profile name
 VM='Windows-10'
 
