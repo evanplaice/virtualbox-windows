@@ -26,6 +26,9 @@ ISO_PATH="$VM_DIR/$(basename $ISO_PATH)"
 # create a new virtual disk
 VBoxManage createhd --filename "$VM_DIR/$VM".vdi --variant fixed --size 32768
 
+# change the virtual disk's UUID to a unique value to avoid name collisions
+VBoxManage internalcommands sethduuid "$VM_DIR/$VM.vdi"
+
 # attach the virtual disk
 RAW_DISK=$(./vdi-attach.sh "$VM_DIR/$VM.vdi" | tail -n1)
 
